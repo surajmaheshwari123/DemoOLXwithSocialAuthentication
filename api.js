@@ -6,7 +6,7 @@ const path = require('path');
 let mongoose=require('mongoose');
 let app=express();
 app.use(cors());
-app.use(bodyParser.json())
+app.use(bodyParser.json())  ;
 mongoose.connect("mongodb+srv://mongodbuser:mongodb@cluster0-dktnn.mongodb.net/<dbname>?retryWrites=true&w=majority",{ useUnifiedTopology: true , useNewUrlParser: true });
 let signupModel=require('./db/signup');
 let promodel=require('./db/product')
